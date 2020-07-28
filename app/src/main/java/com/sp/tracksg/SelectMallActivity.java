@@ -21,6 +21,7 @@ public class SelectMallActivity extends AppCompatActivity {
 
         toolbar=findViewById(R.id.appbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Select any one");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
@@ -34,23 +35,18 @@ public class SelectMallActivity extends AppCompatActivity {
 
         if (name.equals("CausewayPoint"))
         {
-            getSupportActionBar().setTitle("Select any one");
-            title.setText("CausewayvPoint");
+            title.setText("Causeway Point");
         }
         if (name.equals("Junction8"))
         {
-            getSupportActionBar().setTitle("Junction 8");
            title.setText("Junction 8");
-
         }
         if (name.equals("NorthpointCity"))
         {
-            getSupportActionBar().setTitle("Northpoint City");
            title.setText("Northpoint City");
         }
         if (name.equals("WaterwayPoint"))
         {
-            getSupportActionBar().setTitle("Waterway Point");
            title.setText("Waterway Point");
         }
 
@@ -71,7 +67,7 @@ public class SelectMallActivity extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SelectMallActivity.this,MainActivity.class);
+                Intent intent=new Intent(SelectMallActivity.this,MapActivity.class);
                 intent.putExtra("key",name);
                 startActivity(intent);
             }

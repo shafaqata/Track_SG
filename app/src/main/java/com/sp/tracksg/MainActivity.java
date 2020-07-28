@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,SelectMallActivity.class);
-                intent.putExtra("key","WaterwayPoint");
+                intent.putExtra("key","NorthpointCity");
                 startActivity(intent);
 
             }
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,SelectMallActivity.class);
-                intent.putExtra("key","CausewayPoint");
+                intent.putExtra("key","WaterwayPoint");
                 startActivity(intent);
 
             }
