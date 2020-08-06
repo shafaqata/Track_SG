@@ -74,6 +74,14 @@ public class SelectMallActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        crowd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SelectMallActivity.this,CrowdActivity.class);
+                intent.putExtra("key",name);
+                startActivity(intent);
+            }
+        });
 
 
     }
